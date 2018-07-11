@@ -1,24 +1,13 @@
-import React from 'react';
-import axios from 'axios';
+import React from "react";
 
-// export default ({ name }) => <h1>Hello {name}!</h1>;
-
-class BookList extends React.Component {
-  componentDidMount() {
-    axios({
-      method: 'get',
-      url: 'https://www.googleapis.com/books/v1/volumes?q=lord+of+rings',
-
-    })
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
   }
 
-  render(){
-    return (
-      <React.Fragment>
-        <div></div>
-      </React.Fragment>
-    )
+  render() {
+    return <h1>hello!</h1>;
   }
 }
 
-export default BookList;
+export default Home;
